@@ -1,0 +1,12 @@
+console.log("hello world");
+ScrollReveal().reveal('.hero-text-box', {delay: 1000});
+ScrollReveal().reveal('.header', {delay: 0});
+ScrollReveal().reveal('.main-nav', {delay: 1500});
+ScrollReveal().reveal('.section-features');
+ScrollReveal().reveal('.section-meals');
+ScrollReveal().reveal('.section-steps');
+ScrollReveal().reveal('.section-cities');
+ScrollReveal().reveal('.section-testimonials');
+ScrollReveal().reveal('.section-plans');
+ScrollReveal().reveal('.section-form');
+ScrollReveal().reveal('.footer');

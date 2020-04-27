@@ -1,0 +1,660 @@
+/*------------------------*/
+/*basic setup*/
+/*------------------------*/
+
+/* COLORS
+
+Gray #798478
+Green #A0A083
+Blue #6A9296
+Purple #C9ADA1
+Yellow #EAE0CC 
+
+*/
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html { 
+    background-color: #fff;
+    color: #212121;
+    font-family: 'Noto Sans SC', 'arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;     
+    }
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    
+}
+
+/*------------------------*/
+/*reusable components*/
+/*------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+    
+}
+
+/*------------------------*/
+/*link*/
+/*------------------------*/
+
+a:link, 
+a:visited {
+    color: #bababa;
+    text-decoration: none;
+    transition: border-bottom 0.2s, color 0.2s;
+
+}
+
+a:hover,
+a:active {
+    color: #777777;
+    text-decoration: none;
+    border-bottom: 2px transparent #6A9296;
+
+}
+    
+
+
+/*------------------------*/
+/*icon*/
+/*------------------------*/
+
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #798478;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    vertical-align: middle;
+    
+    
+}
+
+.icon-big-1{
+    font-size: 300%;
+    display: block;
+    color: #C9ADA1;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+    
+}
+/*------------------------*/
+/*paragraphs*/
+/*------------------------*/
+
+.long-copy {
+    line-height: 155%;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+
+/*------------------------*/
+/*features*/
+/*------------------------*/
+
+.section-features .long-copy {
+    margin-bottom: 40px;
+    
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 95%;
+    line-height: 145%;
+}
+    
+/*------------------------*/
+/*headings*/
+/*------------------------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    text-transform: uppercase
+        
+}
+h1 {
+    margin: 0;
+    color: transparent;
+    font-size: 200%;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border:0px;
+}
+h2 {
+    margin: 0;
+    color: #000;
+    font-size: 180%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #6A9296;
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center
+}
+
+/*------------------------*/
+/*buttons*/
+/*------------------------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 20px; 
+    margin-top: 10px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+    text-decoration-color: #fff;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.96);
+    border: 1px solid rgba(149, 184, 209, 0);
+    transition: 0.8s;
+    position: relative;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: rgba(248, 248, 248, 0.1);
+    color: #ffff;
+    font-size: 110%;
+    transition: 0.2s;
+}
+
+
+.btn-1: link,
+.btn-1: visited {
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+
+.btn-2:link,
+.btn-2:visited {
+}
+
+
+.btn-3:link,
+.btn-3:visited {
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 30px;
+    opacity: 75%;
+    
+}
+
+.button {
+    
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 20px; 
+    margin-top: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid rgba(149, 184, 209, 0);
+    transition: 0.8s;
+    position: relative;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/*------------------------*/
+/*header*/
+/*------------------------*/
+
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .6)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px; 
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    padding: 10px;
+}
+
+.logo img {
+    text-decoration: none;
+    border:0px;
+    
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    float: center;
+    margin-top: 20px;
+    text-decoration: none;
+    border:0px;
+    
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #798478;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #fff;
+        
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #e0e0e0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #6A9296;
+    color: #ffffff;
+    font-size: 90%; 
+    transition: 0.7s;
+    
+}
+
+/*------------------------*/
+/*photos*/
+/*------------------------*/
+
+.section-meals {
+    padding: 0;
+    
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: .8;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 1s, opacity .5s;
+    
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+     
+}
+
+/*------------------------*/
+/*how it works*/
+/*------------------------*/
+
+.section-steps {
+    background-color: #edece9;
+}
+
+.steps-box {
+    margin-top: 30px;
+    
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    
+}
+
+.app-screen {
+    width: 70%;
+    margin-left: 25%
+    
+}
+
+.works-step {
+    margin-bottom:50px;
+    
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+    
+}
+
+works-step div {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin-right: 25px;
+    
+}
+
+.section-cities {
+    
+    
+}
+
+.box img {
+    display: block;
+    float: left;
+    width: 100%;
+    box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.43);
+    height:auto;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.section-features {
+    background-color: #fff;
+}
+
+   /*------------------------*/
+/*testimonial*/
+/*------------------------*/ 
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/back1.jpg);
+    background-size: cover; 
+    color: #fff;
+    background-attachment: fixed;
+    
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    z-index: 2;
+    margin-top: 40px;
+    
+}
+ 
+blockquote:before {
+    content: "\201c";
+    top: -80px;
+    left: -300px;
+    line-height: 1;
+    font-size: 2000%;
+    opacity: 20%;
+    position: absolute;
+    
+}
+
+
+blockquote {
+    position: relative;
+    
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+
+}
+
+blockquote {
+    position: relative;
+    
+}
+
+cite img {
+    height: 45px;
+    width: 45px;
+    border-radius: 70%;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+.section-plans {
+    background-color: #edece9;
+    
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%; 
+    margin-left: 5%
+    
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+    
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    
+}
+
+.plan-price {
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #A0A083;
+    
+}
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+    
+}
+
+.plan-price-meal {
+   font-size: 80%;
+    
+}
+
+.plan-box ul {
+    list-style: none;
+    
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+
+
+/*------------------------*/
+/*footer*/
+/*------------------------*/
+
+footer {
+    background-color: #363636;
+    font-size: 90%;
+}
+footer p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 80%;
+    padding-top: 20px;
+    color: #727272;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+    padding-top: 40px;
+    margin-top: 30px;
+  
+    
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+    padding-top: 40px;
+    margin-top: 30px;
+    font-size: 170%;
+   
+}
+
+.ion-social-facebook:hover{
+    color: #1877f2;
+
+}
+.ion-social-instagram-outline:hover{
+    color: #c32aa3;
+
+}
+.ion-social-linkedin:hover{
+    color: #007bb5;
+
+}
+.ion-social-twitter:hover{
+    color: #1da1f2;
+    
+}
+.ion-social-facebook,
+.ion-social-instagram-outline,
+.ion-social-linkedin,
+.ion-social-twitter {
+    transition: color 0.2s;
+}
+
+.footer-nav li, 
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+.footer-nav li:last-child, 
+.social-links li:last-child {
+    margin-right: 0;
+    margin-bottom: 5px;
+    
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link;
+.social-links li a:visited,{
+    text-decoration: none;
+    border: 0;
+    color: #b1b1b1;
+    transition: color 0.2s;
+    color: #fff;
+    
+    
+    
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+    
+    
+}
+
+
+
